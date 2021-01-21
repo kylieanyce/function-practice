@@ -1,4 +1,4 @@
-//----------------Best In Show -------------------------------
+//---------------- Best In Show -------------------------------
 
 const favoriteBreed = (dogtype) => {
     if (dogtype === "schnauzer") {
@@ -9,6 +9,14 @@ const favoriteBreed = (dogtype) => {
 }
 console.log("when it comes to pets" + favoriteBreed("meow"))
 
-//--------------------Addition -------------------------------
 
+//-------------------- Addition ----------------------------------
+
+let add = (num, another, ber) => {
+    let digit = (another + num + ber)
+    console.log(digit)
+}
+add(5, 17, 6)
+
+//---------------- Self-Driving Cars-------------------------------
 
