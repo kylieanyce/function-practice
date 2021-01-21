@@ -18,5 +18,21 @@ let add = (num, another, ber) => {
 }
 add(5, 17, 6)
 
-//---------------- Self-Driving Cars-------------------------------
+
+//---------------- Self-Driving Cars -------------------------------
+
+const go = (direction, speed) => {
+    if (speed <= 75) {
+        console.log("The car is moving " + direction + " at " + speed + " mph.")
+    } else {
+        console.log("The car is moving " + direction + " at " + speed + " mph. SLOW DOWN!")
+    }
+}
+const northwest = "north-west"
+const south = "south"
+go(northwest, 52)
+go(south, 89)
+
+
+//---------------- Evens or Odds -------------------------------
 
