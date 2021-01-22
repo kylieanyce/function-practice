@@ -50,3 +50,40 @@ for (const one of array) {
     evenOrOdd(one)  
 }
 
+
+//---------------- Double Functions -------------------------------
+
+const words = [
+    "The", "killing", "complex", "houses",
+    "married", "kittens", "and", "single",
+    "soldiers", "and", "their", "kleptomaniacal",
+    "families"
+]
+
+/*
+    Function to filter out `k` words
+    (Google 'javascript startswith' to get started)
+ */
+const no = []
+if (words.startsWith("k",0)) {
+    no.push(words)
+}
+
+/*
+    Function to build a single string from the array
+    (Google 'javascript combine all items in array' to get started)
+ */
+
+
+/*
+    Invoke the filtering function and store its return value
+ */
+
+
+/*
+    Invoke the string building function, and pass the
+    return value of the previous function as an argument
+*/
+
+
+console.log()
