@@ -36,3 +36,17 @@ go(south, 89)
 
 //---------------- Evens or Odds -------------------------------
 
+const evenOrOdd = (num) => {
+    if (num % 2 === 0) {
+        console.log("Even")
+    } else {
+        console.log("Odd")
+    }
+}
+
+const array = [34, 58, 0, 3, 897]
+
+for (const one of array) {
+    evenOrOdd(one)  
+}
+
