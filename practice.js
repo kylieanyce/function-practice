@@ -64,9 +64,13 @@ const words = [
     Function to filter out `k` words
     (Google 'javascript startswith' to get started)
  */
+
 const no = []
-if (words.startsWith("k",0)) {
-    no.push(words)
+for (let i = 0; i < words.length; i++) {
+    if (!words[i].startsWith("k")) {
+        no.push(words[i])
+    }
+    console.log(no)
 }
 
 /*
