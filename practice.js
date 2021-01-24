@@ -66,28 +66,34 @@ const words = [
  */
 
 const no = []
-for (let i = 0; i < words.length; i++) {
-    if (!words[i].startsWith("k")) {
-        no.push(words[i])
-    }
-    console.log(no)
-}
 
+const filter = (anArray) => {
+    for (let i = 0; i < anArray.length; i++) {
+        if (!anArray[i].startsWith("k")) {
+            no.push(anArray[i])
+        }
+    }
+    return no
+}
 /*
     Function to build a single string from the array
     (Google 'javascript combine all items in array' to get started)
  */
+const build = (anotherArray) => {
+    return anotherArray.join(' ')
+}
+
 
 
 /*
     Invoke the filtering function and store its return value
  */
-
+const returnValue = filter(words)
 
 /*
     Invoke the string building function, and pass the
     return value of the previous function as an argument
 */
+console.log(build(returnValue))
 
 
-console.log()
