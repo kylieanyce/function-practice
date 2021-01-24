@@ -70,8 +70,8 @@ for (let i = 0; i < words.length; i++) {
     if (!words[i].startsWith("k")) {
         no.push(words[i])
     }
-    console.log(no)
 }
+console.log(no)
 
 /*
     Function to build a single string from the array
