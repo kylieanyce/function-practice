@@ -113,3 +113,15 @@ const hooked = (num) => {
 }
 hooked(3)
 
+
+//---------------- Fast Food --------------------------------------
+
+const meal = []
+
+const Order = (orderOne, orderTwo, orderThree, orderFour) => {
+    meal.push({sandwich: orderOne, side: orderTwo, drink: orderThree, dessert: orderFour })
+    console.log(meal)
+}
+
+Order("ultimate Slammer", "Potato wedges", "Mr. Pepper", "Fudge Sundae")
+
