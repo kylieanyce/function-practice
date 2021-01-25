@@ -97,3 +97,19 @@ const returnValue = filter(words)
 console.log(build(returnValue))
 
 
+//---------------- Piano Function -------------------------------
+
+const hooked = (num) => {
+    const fishing = Math.random() * num
+    if (fishing > 2) {
+        console.log(fishing)
+        console.log("got one!")
+        return true
+    } else {
+        console.log(fishing)
+        console.log("nope")
+        return false
+    }
+}
+hooked(3)
+
