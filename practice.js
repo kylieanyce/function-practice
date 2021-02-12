@@ -1,4 +1,4 @@
-//---------------- Best In Show -------------------------------
+//---------------- Best In Show -----------------------------------
 
 const favoriteBreed = (dogtype) => {
     if (dogtype === "schnauzer") {
@@ -10,7 +10,7 @@ const favoriteBreed = (dogtype) => {
 console.log("when it comes to pets" + favoriteBreed("meow"))
 
 
-//-------------------- Addition ----------------------------------
+//-------------------- Addition ------------------------------------
 
 let add = (num, another, ber) => {
     let digit = (another + num + ber)
@@ -19,7 +19,7 @@ let add = (num, another, ber) => {
 add(5, 17, 6)
 
 
-//---------------- Self-Driving Cars -------------------------------
+//---------------- Self-Driving Cars --------------------------------
 
 const go = (direction, speed) => {
     if (speed <= 75) {
@@ -34,7 +34,7 @@ go(northwest, 52)
 go(south, 89)
 
 
-//---------------- Evens or Odds -------------------------------
+//------------------- Evens or Odds ----------------------------------
 
 const evenOrOdd = (num) => {
     if (num % 2 === 0) {
@@ -51,7 +51,7 @@ for (const one of array) {
 }
 
 
-//---------------- Double Functions -------------------------------
+//---------------- Double Functions ----------------------------------
 
 const words = [
     "The", "killing", "complex", "houses",
@@ -59,14 +59,11 @@ const words = [
     "soldiers", "and", "their", "kleptomaniacal",
     "families"
 ]
-
 /*
     Function to filter out `k` words
     (Google 'javascript startswith' to get started)
  */
-
 const no = []
-
 const filter = (anArray) => {
     for (let i = 0; i < anArray.length; i++) {
         if (!anArray[i].startsWith("k")) {
@@ -82,14 +79,10 @@ const filter = (anArray) => {
 const build = (anotherArray) => {
     return anotherArray.join(' ')
 }
-
-
-
 /*
     Invoke the filtering function and store its return value
  */
 const returnValue = filter(words)
-
 /*
     Invoke the string building function, and pass the
     return value of the previous function as an argument
@@ -97,7 +90,7 @@ const returnValue = filter(words)
 console.log(build(returnValue))
 
 
-//---------------- Piano Function -------------------------------
+//------------------- Piano Function ----------------------------------
 
 const hooked = (num) => {
     const fishing = Math.random() * num
@@ -114,7 +107,7 @@ const hooked = (num) => {
 hooked(3)
 
 
-//---------------- Fast Food --------------------------------------
+//--------------------- Fast Food --------------------------------------
 
 const meal = []
 
@@ -125,3 +118,33 @@ const Order = (orderOne, orderTwo, orderThree, orderFour) => {
 
 Order("ultimate Slammer", "Potato wedges", "Mr. Pepper", "Fudge Sundae")
 
+
+//--------------------- Chores ------------------------------------------
+
+const person = {
+    firstName: "Terry",
+    lastName: "Feinstein"
+}
+
+const one = person => `${person.firstName} ${person.lastName} went to the DMV`
+const two = person => `${person.firstName} ${person.lastName} got a haircut`
+const three = person => `${person.firstName} ${person.lastName} had their oil changed`
+const four = person => `${person.firstName} ${person.lastName} cleaned the kitchen`
+const five = person => `${person.firstName} ${person.lastName} made some food`
+const six = person => `${person.firstName} ${person.lastName} swept the porch`
+
+const answer = three(person)
+console.log(answer)
+
+const monday = "monday"
+const chore = {
+    one: "mowed the lawn",
+    two: "got a haircut",
+    three: "made some food"
+}
+
+const dayPlanner = (chore, person, day) => {
+    return `${chore(person)} on ${day}.`
+}
+
+console.log(dayPlanner(three, person, monday))
