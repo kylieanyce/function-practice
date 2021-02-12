@@ -121,13 +121,30 @@ Order("ultimate Slammer", "Potato wedges", "Mr. Pepper", "Fudge Sundae")
 
 //--------------------- Chores ------------------------------------------
 
-const one = person => `${firstName} ${lastName} went to the DMV.`
-const two = person => `${firstName} ${lastName} got a haircut.`
-const three = person => `${firstName} ${lastName} had their oil changed.`
-const four = person => `${firstName} ${lastName} cleaned the kitchen.`
-const five = person => `${firstName} ${lastName} made some food.`
-const six = person => `${firstName} ${lastName} swept the porch.`
-
-const chores = (chore, person, day) => {
-    
+const person = {
+    firstName: "Terry",
+    lastName: "Feinstein"
 }
+
+const one = person => `${person.firstName} ${person.lastName} went to the DMV`
+const two = person => `${person.firstName} ${person.lastName} got a haircut`
+const three = person => `${person.firstName} ${person.lastName} had their oil changed`
+const four = person => `${person.firstName} ${person.lastName} cleaned the kitchen`
+const five = person => `${person.firstName} ${person.lastName} made some food`
+const six = person => `${person.firstName} ${person.lastName} swept the porch`
+
+const answer = three(person)
+console.log(answer)
+
+const monday = "monday"
+const chore = {
+    one: "mowed the lawn",
+    two: "got a haircut",
+    three: "made some food"
+}
+
+const dayPlanner = (chore, person, day) => {
+    return `${chore(person)} on ${day}.`
+}
+
+console.log(dayPlanner(three, person, monday))
